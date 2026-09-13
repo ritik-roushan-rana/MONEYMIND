@@ -69,7 +69,7 @@ Ingestion ──► M0 Normalizer ──► LLM bulk labeler ──► M1 catego
 **PDF** — any text-based (not scanned) statement with a header row containing a *Date* column,
 *Withdrawal/Debit* and *Deposit/Credit* columns (any common spelling), and ideally a *Balance*
 column. The issuing bank is read from the statement itself, so filenames don't matter. Tested on
-HDFC, Axis and ICICI. Scanned/image-only PDFs are not supported (no OCR).
+HDFC, Axis and ICICI bank Statement. Scanned/image-only PDFs are not supported (no OCR).
 
 **CSV** — needs a date column, a description/narration column, and either debit + credit columns
 or a single amount column (signed, or paired with a Dr/Cr column). Header names like
