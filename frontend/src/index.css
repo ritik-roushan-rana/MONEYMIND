@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { font-family: "Inter", system-ui, sans-serif; }
+  body { @apply bg-canvas text-ink antialiased; }
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+    font-size: 20px;
+    line-height: 1;
+  }
+  .tnum { font-variant-numeric: tabular-nums; }
+}
+
+@layer components {
+  .card { @apply bg-white border border-line rounded-lg shadow-card; }
+  .btn-primary { @apply inline-flex items-center gap-2 h-10 px-4 rounded-md bg-teal text-white text-sm font-medium hover:bg-teal-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed; }
+  .btn-outline { @apply inline-flex items-center gap-2 h-10 px-4 rounded-md bg-white border border-line text-ink text-sm font-medium hover:border-line-strong hover:bg-slate-50 transition-colors; }
+  .pill { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[11px] font-medium leading-4 whitespace-nowrap; }
+  .label { @apply text-label-sm uppercase tracking-wider text-ink-2; }
+  .input { @apply h-10 w-full rounded-md border border-line bg-white px-3 text-sm text-ink placeholder:text-ink-4 focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal; }
+}

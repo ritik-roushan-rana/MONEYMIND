@@ -1,0 +1,19 @@
+# Python dependencies for the ML pipeline (ml/src) and the FastAPI backend (backend/).
+# Install into one virtualenv from the repo root:  pip install -r requirements.txt
+
+# --- pipeline ---
+pdfplumber>=0.11
+pydantic>=2.5
+pandas>=2.2
+pyarrow>=15
+numpy>=1.26
+scikit-learn>=1.5
+xgboost>=2.1
+joblib>=1.4
+google-genai>=1.0
+python-dotenv>=1.0
+
+# --- backend ---
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9

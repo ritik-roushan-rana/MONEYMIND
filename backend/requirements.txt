@@ -1,0 +1,7 @@
+# Web layer only — the ML pipeline's own deps live in ml/src/requirements.txt
+# (plus pandas, pyarrow, scikit-learn, xgboost, google-genai, joblib).
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+python-dotenv>=1.0
+pydantic>=2.5
